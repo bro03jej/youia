@@ -138,7 +138,7 @@ local DefaultConfig = {
     }, 
     TpSettings = {
         Tool           = "Flying Carpet",
-        Speed          = 0.05, 
+        Speed          = 2, 
         TpKey          = "T",
         CloneKey       = "V",
         TpOnLoad       = false,
@@ -385,10 +385,10 @@ local function instantClone()
             hum:EquipTool(cloner)
         end)
 
-        task.wait(0.01)
+        task.wait(0.03)
 
         cloner:Activate()
-        task.wait(0.01)
+        task.wait(0.03)
 
         local cloneName = tostring(LocalPlayer.UserId) .. "_Clone"
         for _ = 1, 100 do
